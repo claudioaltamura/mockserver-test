@@ -21,6 +21,5 @@ jobs:
         with:
           java-version: ${{matrix.java}}
           distribution: 'adopt'
-          cache: false
       - name: Build with Maven Wrapper
         run: ./mvnw -B package
